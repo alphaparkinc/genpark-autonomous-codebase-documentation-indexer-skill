@@ -1,0 +1,31 @@
+{
+  "name": "genpark-autonomous-codebase-documentation-indexer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Automated codebase architecture & symbol documentation indexer.",
+  "author": "genpark",
+  "category": "developer",
+  "tags": [
+    "codebase-docs",
+    "indexer",
+    "architecture-map",
+    "developer-tools"
+  ],
+  "inputs": {
+    "codebase_root": {
+      "type": "string"
+    },
+    "file_extensions": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "indexed_symbols_count": {
+      "type": "integer"
+    },
+    "architecture_graph": {
+      "type": "object"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
